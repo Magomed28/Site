@@ -1,0 +1,7 @@
+/node_modules/
+/.git/
+/.idea/
+/config/db_params.php
+/**/package-lock.json
+
+

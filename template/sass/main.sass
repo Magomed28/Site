@@ -1,0 +1,533 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #000
+	background-color: #fff
+
+
+
+a, a:hover
+	color: #000
+
+
+.bgd-img
+	margin-left: 5%
+	img
+		max-width: 100%
+
+	
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+li
+	display: inline-block
+	
+
+#header
+	background-color: #000
+	color: white
+	opacity: 0.75
+	a
+		color: white
+#header:hover
+	opacity: 1
+
+
+
+.container
+	color: #000
+	padding-top: 3px
+	padding-left: 0
+	padding-right: 0
+	margin: 0
+	max-width: 1300px
+
+.left-menu-icon
+	margin-left: 70%
+	margin-top: 5px
+	cursor: pointer
+	position: relative
+	float: left
+	z-index: 20
+	width: 30px
+	height: 30px
+	transition: all .3s ease-in-out
+	i
+		border-bottom: 1px solid white
+		transform-origin: 100% 50%
+		display: block
+		width: 20px
+		transition: all .3s ease-in-out
+	i:first-child
+		padding-top: 5px
+		margin-top: 5px
+	i:last-child
+		margin-top: 10px
+
+.left-menu-icon:hover
+	i:first-child
+		opacity: 1
+		padding-top: 0
+
+	i:last-child
+		margin-top: 15px
+
+
+
+.left-menu-overlay
+	position: fixed
+	opacity: 0
+	visibility: hidden
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.5)
+	z-index: 18
+	transition: all .3s ease-in-out
+
+.left-menu
+	z-index: 19
+	position: fixed
+	left: -350px
+	top: 0
+	width: 350px
+	height: 100%
+	background: rgba(0,0,0,.9)
+	padding: 120px 35px
+	transition: all .5s ease-in-out
+	.left-menu-links
+
+		ul
+			display: flex
+			flex-direction: column
+			list-style: none outside none
+
+			li
+				margin: 15px 0
+				a
+
+					font-size: 13px
+#category
+	visibility: hidden
+.social
+	margin-top: 50px
+	.link
+		li
+			margin-right: 30px
+			font-size: 20px
+		.fb
+			a
+				i
+					transition: color .45s ease-in-out
+				i:hover
+					color: #3b5998
+		.instagram
+			a
+				i
+					transition: color .45s ease-in-out
+				i:hover
+					color: #2a5b83
+		.youtube
+			a
+				i
+					transition: color .45s ease-in-out
+				i:hover
+					color: #f03434
+		.vk
+			a
+				i
+					transition: color .45s ease-in-out
+				i:hover
+					color: #406894
+
+.logo
+	max-width: 50px
+	margin-left: auto
+	margin-right: auto
+
+.menu-right-icon
+
+	margin-right: 0
+	padding-left: 0
+
+
+
+.list
+	margin-top: 2%
+	margin-left: 45%
+	padding-left: 0
+	li
+		padding-right: 7px
+		padding-left: 7px
+		a
+			font-size: 17px
+
+
+
+.main-menu
+	border-top: 1px solid white
+	margin: 0
+	padding: 0
+	border-bottom: 1px solid white
+.col-12
+	padding: 0
+.mainmenu-child
+	.nav
+		display: flex
+		margin: auto 1%
+		padding: 0
+		justify-content: space-around
+		li
+			a
+				font-size: 11px
+				display: block
+				padding: 8px 0
+				text-decoration: none
+				align-items: center
+
+
+		.brand-mega-menu
+			display: block
+			position: absolute
+			top: 34px
+			left: 0
+			width: 100%
+			z-index: 30
+			visibility: hidden
+			background-color: rgba(0,0,0,.7)
+			font-size: 11px
+
+			a
+				padding: 0
+			.menu-content
+				max-width: 1200px
+				.row
+					padding: 25px 0
+					.col-2
+						padding-right: 0
+						line-height: 40px
+						ul
+							li
+								display: block
+								margin: 0
+					.col-7
+						.favorite-brands
+							margin-top: 10px
+						ul
+							display: flex
+							flex-wrap: wrap
+							justify-content: space-around
+							li
+								margin-top: 3%
+								margin-right: 3%
+.alphabet
+	display: flex
+	flex-wrap: wrap
+	margin-top: 8px
+	text-transform: uppercase
+	.alphabet-title
+		color: #fff
+		margin-top: 0
+		height: 30px
+		line-height: 30px
+		margin-right: 5px
+	.alphabet-all
+		text-transform: none
+		width: 100%
+		text-align: right
+
+
+.letter
+	text-transform: uppercase
+	font-size: 14px
+	width: 13%
+	height: 45px
+	line-height: 30px
+	vertical-align: middle
+	cursor: pointer
+	text-align: center
+
+
+
+
+
+
+
+//slider
+
+
+.wrap
+	width: 1050px
+	margin-left: auto
+	margin-right: auto
+
+.novelties-slider
+	height: 500px
+
+.novelties
+	margin-top: 120px
+	text-align: center
+	margin-bottom: 120px
+	font-size: 26px
+	font-family: kievitpro
+
+.slick-track
+	left: 2px
+
+
+
+.product-image-wrapper
+	display: flex
+	flex-direction: column
+	height: 500px
+	text-align: center
+
+	
+
+
+.cart-and-price
+	height: 50px
+	position: absolute
+	top: 70%
+	margin-left: 45px
+	a 
+		text-decoration: none
+
+.add-to-cart
+	display: block
+	width: 135px
+	height: 40px
+	font-family: kievitpro
+	color: rgba(0,0,0,.8)
+	font-size: 13px
+	border: 1px solid #000
+	box-sizing: border-box
+	margin: 10px 
+	text-transform: uppercase
+	padding-top: 9px
+	i 
+		margin-right: 5px
+	
+	
+
+.make-up
+	margin-top: 150px
+	.col
+		padding: 0
+		text-align: center
+		h1
+			margin-bottom: 100px
+			font-size: 34px
+			font-family: kievitpro
+			font-weight: normal
+			max-widht: 100%
+		.make-up-button
+			display: block
+			width: 135px;
+			height: 40px;
+			font-family: kievitpro;
+			color: rgba(0,0,0,.8);
+			font-size: 13px;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			margin: 130px auto;
+			text-transform: uppercase;
+			padding-top: 9px
+			text-decoration: none
+		.make-up-button:hover
+			background-color: #000
+			color: #fff
+
+	.make-up-img
+		img
+			max-width: 100%
+			
+.cabinet-row
+	height: 370px
+	.cabinet-col
+		text-align: center
+		h1 
+			margin: 40px 0
+		a
+			margin: 50px
+
+.user-login
+	justify-content: center
+	margin-top: 70px	
+.login
+	max-width: 300px
+	text-align: center
+	ul
+		padding: 0
+		a 
+			display: block
+			border: 1px solid black
+			width: 180px
+			height: 30px
+			margin: 45px
+	form
+		margin-top: 35px
+		input
+			display: block
+			margin: 30px 0
+			width: 300px
+			background-color: white
+			padding: 0
+			border: 1px solid black
+
+//novelties
+
+.container-wrap
+	color: #000
+	padding-top: 3px
+	padding-left: 0
+	padding-right: 0
+	margin: 150px 150px
+	max-width: 1150px
+
+
+.novelties-title
+	text-align: center
+	margin-bottom: 125px
+.single-product
+	display: flex
+	flex-direction: column
+	height: 500px
+	max-width: 270px
+	text-align: center
+	.cart-and-price
+		margin-left: 57px
+.pagination-wrap 
+	margin-top: 100px
+	position: absolute
+	left: 41%
+	text-align: center
+.pagination
+	li 
+		margin-right: 10px
+		border: 1px solid black
+		width: 30px
+//contacts
+
+.contacts-row
+	justify-content: center
+	margin-top: 70px
+.contacts-col
+
+	max-width: 300px
+	text-align: center
+	.signup-form
+		form
+			margin-top: 35px
+			input
+				display: block
+				margin: 10px 0
+				width: 300px
+				background-color: white
+				padding: 0
+				border: 1px solid black
+
+//cart
+
+.container-cart
+	height: 400px
+
+.text-center
+	padding-right: 70px
+	padding-bottom: 30px
+.table
+	
+	table-layout: fixed
+	width: 900px
+	text-align: center
+
+#total-cost
+	text-align: start
+	padding-left: 50px
+	padding-top: 50px
+#total-cost1
+	padding-top: 50px
+
+#order
+	margin-left: 70%
+	margin-top: 15%
+	width: 150px
+	height: 40px
+	font-family: kievitpro
+	color: rgba(0,0,0,.8)
+	font-size: 13px
+	border: 1px solid #000
+	box-sizing: border-box
+	text-transform: uppercase
+	padding-top: 9px		
+	text-align: center
+
+#input-text
+	width: 50px
+	text-align: center
+
+.description
+	margin: 70px 60px
+.product-information
+	.add-to-cart
+		text-align: center
+		margin: 25px 0
+		text-decoration: none
+
+//footer
+
+#footer
+	height: 50px
+	margin-top: 150px
+	background-color: #aaa
+	font-size: 14px
+	color: white
+	
+.footer
+	color: white
+	text-align: center
+	margin-top: 5px
+	a 
+		margin: 30px
+		color: white
+		text-decoration: none
+
+
+
+
+
+
+//admin
+.admin-header
+	#to-site
+		text-align: end
+
+.admin
+
+	margin: 5% 35%
+	height: 300px
+	width: 300px
+	flex-direction: column
+.admin-col
+	text-align: center
+	margin-right: 100px
+	margin-bottom: 100px
+.add-products
+	margin-left: 4%
+
+@import "media" // Always at the end
